@@ -70,13 +70,13 @@ export default function Menu () {
         <div>
             <div className="overlay-navigation">
                 <nav role="navigation">
-                    <ul>
+                    {/* <ul>
                     <li><a href="#" data-content="The beginning">Home</a></li>
                     <li><a href="#" data-content="Curious?">About</a></li>
                     <li><a href="#" data-content="I got game">Skills</a></li>
                     <li><a href="#" data-content="Only the finest">Works</a></li>
                     <li><a href="#" data-content="Don't hesitate">Contact</a></li>
-                    </ul>
+                    </ul> */}
                 </nav>
             </div>
             <section className="home">
