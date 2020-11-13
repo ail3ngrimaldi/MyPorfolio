@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Trispace:wght@500&display=swap');
+@import '../main';
+
+h1 {
+    @include flexCenter();
+    width: 100vh;
+    font-size: 10rem;
+    font-weight: 780;
+    color:white;
+}
+
+.glitch {
+    font-size: 8vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.50),
+      -0.05em -0.05em 0 rgba(0, 255, 0, 0.50),
+      0.05em 0.05em 0 rgba(0, 0, 255, 0.50);
+    animation: glitch 500ms infinite 50ms;
+  }
+
+.glitch:hover {
+    animation: none;
+}
+
+.principalText {
+    @include flexCenter();
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+          -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+          -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+    14% {
+        text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+          -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+          -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+    15% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+          0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+          -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+    49% {
+        text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+          0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+          -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+          0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+          0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+          -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+          -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+      }
+    }
+
